@@ -1,5 +1,12 @@
 import PropTypes from "prop-types";
-const Profile = ({ name, tag, location, image, stats }) => {
+
+const Profile = ({
+  name,
+  tag,
+  location,
+  image,
+  stats: { followers, views, likes },
+}) => {
   return (
     <div className="container profile-container">
       <div className="profile-photo">
@@ -12,15 +19,15 @@ const Profile = ({ name, tag, location, image, stats }) => {
       <ul className="profile-list">
         <li className="profile-list-item">
           <span className="stats-title">Followers</span>
-          <span className="stats-bold">{stats.followers}</span>
+          <span className="stats-bold">{followers}</span>
         </li>
         <li className="profile-list-item">
           <span className="stats-title">Views</span>
-          <span className="stats-bold">{stats.views}</span>
+          <span className="stats-bold">{views}</span>
         </li>
         <li className="profile-list-item">
           <span className="stats-title">Likes</span>
-          <span className="stats-bold">{stats.likes}</span>
+          <span className="stats-bold">{likes}</span>
         </li>
       </ul>
     </div>
