@@ -7,7 +7,7 @@ import TransactionHistory from "../TransactionHistory/TransactionHistory";
 
 export default function App() {
   return (
-    <>
+    <div className="container">
       <Profile
         name={username}
         tag={tag}
@@ -18,6 +18,6 @@ export default function App() {
       <FriendList friends={friends} />
 
       <TransactionHistory items={transactions} />
-    </>
+    </div>
   );
 }

@@ -1,5 +1,6 @@
 @import url(./components/Profile/profile.css);
 @import url(./components/FriendListItem/FriendListItem.css);
+@import url(./components/TransactionHistory/TransactionHistory.css);
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

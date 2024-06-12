@@ -1,14 +1,14 @@
 import PropTypes from "prop-types";
 
-const Profile = ({
+export default function Profile({
   name,
   tag,
   location,
   image,
   stats: { followers, views, likes },
-}) => {
+}) {
   return (
-    <div className="container profile-container">
+    <div className=" profile-container">
       <div className="profile-photo">
         <img src={image} alt="User avatar" />
         <p className="profile-name">{name}</p>
@@ -32,7 +32,7 @@ const Profile = ({
       </ul>
     </div>
   );
-};
+}
 
 Profile.propTypes = {
   name: PropTypes.string.isRequired,
@@ -45,5 +45,3 @@ Profile.propTypes = {
     likes: PropTypes.number.isRequired,
   }).isRequired,
 };
-
-export default Profile;
